@@ -1,0 +1,16 @@
+.s-1 {
+    height: 800px;
+    background-color: lightcyan;
+    .container {
+        @include mycontainer;
+        @include myflex;
+        justify-content: space-evenly;
+        height: 500px;
+        border: 2px solid black;
+        .box1,
+        .box2,
+        .box3 {
+            @include card;
+        }
+    }
+}
